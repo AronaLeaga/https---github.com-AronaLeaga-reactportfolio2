@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo'
 import './index.scss';
 
 const Home = () => {
@@ -9,11 +10,11 @@ const Home = () => {
     const nameArray = ['l','o','b','o','d','a','n']
     const jobArray = ['w','e','b','','d','e','v','e','l','o','p','e','r','.']
 
-  useEffect(() => {
+  /* useEffect(() => {
     return setTimeout(() => {
        setLetterClass('text-animate-hover')
   }, 4000)
-}, []) 
+}, []) */
 
     
     return (
@@ -39,9 +40,9 @@ const Home = () => {
             <h2>Frontend Developer / JavaSccript Expert / Youtuber</h2>
             <Link to="/contact" className="flat-button" >CONTACT ME</Link>
         </div>
-
+        <Logo />
         </div>
-    );
+    )
 }
 
 export default Home 
